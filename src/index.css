@@ -67,6 +67,17 @@ hr {
   height: auto;
 }
 
+.flex-row {
+  display: flex;
+  flex-flow: row;
+  width: 50vw;
+  height: auto;
+}
+
+.flex-row img {
+  min-width: 1px;
+}
+
 #projects-container {
   width: 35vw;
   display: flex;
