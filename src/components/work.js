@@ -22,15 +22,14 @@ export default class Work extends Component {
           <h2>Defining the Problem Space</h2>
           <p>
             After brainstorming many different potential problems I could tackle
-            within Spotify, I decided to settle on their{" "}
-            <em>music discovery</em>. Spotify's discover section, although
-            improving, is weak. It works, but it could be a lot better. The
-            whole point of the discover section is to make it <em>easier</em>{" "}
-            for the user to rummage through the almost infinite number of
-            existing songs there are in the world for the songs that they will
-            like. There are still many overwhelming things on the discover
-            section, and in addition many playlists have either repetitive
-            artists or songs.
+            within Spotify, I decided to focus on <em>music discovery</em>.
+            Spotify's discover section, although improving, is weak. It works,
+            but it could be a lot better. The whole point of the discover
+            section is to make it <em>easier</em> for the user to rummage
+            through the almost infinite number of existing songs there are in
+            the world so they could find the songs that they will like. There
+            are still many overwhelming things on the discover section, and in
+            addition many playlists have either repetitive artists or songs.
           </p>
           <h3>The People Problem</h3>
           <p>
@@ -55,9 +54,9 @@ export default class Work extends Component {
           </p>
           <h2>Research</h2>
           <p>
-            To look into this problem, I both conducted in user research in
-            person and online through a survey and an interview, as well as
-            market research.
+            To look into this problem, I both conducted user research in person
+            and online through a survey and an interview, as well as market
+            research.
           </p>
           <h3>Results</h3>
           <p>
@@ -129,19 +128,18 @@ export default class Work extends Component {
           />
           <h3>Brainstorming</h3>
           <p>
-            In order to come up with many diverse ideas, I brainstormed with my
-            friends Rebecca, a third year nutrition major, and Ariel, a second
-            year student undecided. They both have very different tastes in
-            music and both use Spotify to listen to music. After the HMW (How
-            May We)’s some of the restrictions in choosing Opportunity Areas
-            were lack of visual problems and more algorithm based problems
-            (specifically in the recommendations section). At the end of the
-            brainstorming session, we chose these 3 solution spaces because we
-            either thought they were very promising or interesting spaces. We
-            thought the description and identifying what you like about a song
-            spaces would be good to choose since we are dealing with a search
-            problem. The social aspect was to potentially mimic how people
-            ‘discover’ songs out in the real world.
+            In order to come up with many diverse ideas, I brainstormed with two
+            friends. They both have very different tastes in music and both use
+            Spotify to listen to music. After the HMW (How May We)’s some of the
+            restrictions in choosing Opportunity Areas were lack of visual
+            problems and more algorithm based problems (specifically in the
+            recommendations section). At the end of the brainstorming session,
+            we chose these 3 solution spaces because we either thought they were
+            very promising or interesting spaces. We thought the description and
+            identifying what you like about a song spaces would be good to
+            choose since we are dealing with a search problem. The social aspect
+            was to potentially mimic how people ‘discover’ songs out in the real
+            world.
           </p>
           <img
             src={
@@ -172,12 +170,10 @@ export default class Work extends Component {
             <em>based on content</em>. It allows users to be more specific in
             what they want by searching multiple tags at a time, as well as let
             people look for songs that might not necessarily be in a playlist,
-            especially since the Spotify playlists are repetitive. It’s better
-            than some of the other features because at least for the features we
-            came up with that aided people with what to search, it would not
-            restrict their search to Spotify, since Spotify doesn’t really have
-            a search mechanism at the moment that is content-based, as opposed
-            to title based.
+            especially since the Spotify playlists are repetitive. It's better
+            than some of the other features we came up with because it
+            introduces a search-mechanism to Spotify that is{" "}
+            <em>content-based</em> rather than title-based.
           </p>
           <h2>Designing: Building the Feature</h2>
           <p>
@@ -398,12 +394,14 @@ export default class Work extends Component {
             conducted <em>more user testing</em> in order to really get more
             accurate results with regards to how to improve the user flow and
             the visual design. I would have also <em>explored</em> more
-            iterations with respect to user flow and visual design, especially
-            when it comes to the tag page and the content requirements I came up
+            iterations with respect to user flow and visual design. Especially
+            in regards to the tag page and the content requirements I came up
             with. Finally, I didn't explore the artist-side user experience with
-            tags, which answers the question of who tags content. The next steps
+            tags, or the question of <em>who tags items</em>. The next steps
             would be to really delve deep into each content requirement and
-            analyze them individually.
+            analyze them individually. Finally, due to time-constraints I also
+            put together a quick prototype, but I would have added more examples
+            and animations to it to make it more seemless.
           </p>
         </div>
       ),
