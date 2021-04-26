@@ -816,24 +816,48 @@ export default class Work extends Component {
     {
       title: "HopIt",
       description: "",
+      date: "",
       rendering: <ComingSoon></ComingSoon>,
       category: "Visual Design",
     },
     {
       title: "Artist&Title",
       description: "",
+      date: "",
       rendering: <ComingSoon></ComingSoon>,
       category: "Visual Design",
     },
     {
       title: "Addictiveness Project",
-      description: "",
-      rendering: <ComingSoon></ComingSoon>,
+      description:
+        "As part of my Psychology of Computer Graphics course I explored the question 'What makes us addicted to apps?'",
+      date: "August 2019 - December 2019",
+      rendering: (
+        // <div class="post-wrapper">
+        //   <p>
+        //     Get on Tiktok at 7PM. What seems to be a second later, you look back
+        //     at the time. It's midnight. Most of us are familiar with this
+        //     phenomenon, whether it be Tiktok or any other social media. But app
+        //     addiction exhibits itself in many ways. According to thenextweb.com,
+        //     "The average user peeks at their smartphone about 110 times a day,
+        //     and according to mobile analytics provider Flurry, more than 176
+        //     million users world-wide access apps on their device more than 60
+        //     times a day."
+        //   </p>
+        //   <h2>So what makes us so addicted to these apps?</h2>
+        //   <p>I did some research and here's what I found:</p>
+        //   <ul>
+
+        //   </ul>
+        // </div>
+        <ComingSoon></ComingSoon>
+      ),
       category: "User Experience Design",
     },
     {
       title: "Office Hours App",
       description: "",
+      date: "",
       rendering: <ComingSoon></ComingSoon>,
       category: "User Experience Design",
     },
@@ -841,6 +865,7 @@ export default class Work extends Component {
       title: "Play Among the Michelin Stars",
       description:
         "Data visualization exploring Michelin star restaurants across the globe.",
+      date: "April 2021",
       rendering: <ComingSoon></ComingSoon>,
       category: "Data Visualization",
     },
