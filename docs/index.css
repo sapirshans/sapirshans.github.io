@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto+Mono:wght@400;700");
+
+svg {
+  position: absolute;
+  z-index: -1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto";
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Mono", sans-serif;
+  background: #ffb347; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffcc33,
+    #ffb347
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffcc33,
+    #ffb347
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p,
+li {
+  line-height: 25px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+#hello {
+  font-size: 30px;
+}
+
+hr {
+  border-top: 2px solid #ffb5da;
+}
+
+/*CENTER PROJECT PAGE AND SET WIDTH*/
+.content {
+  max-width: 60%;
+  min-width: 40%;
+  margin: auto;
+  min-height: 100vh;
+}
+.content-bg {
+  background: white;
+  padding: 5vh;
+  width: fit-content;
+  margin: auto;
+}
+.post-wrapper {
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.post-wrapper img {
+  width: 50vw;
+  height: auto;
+}
+
+#projects-container {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  text-transform: lowercase;
+}
+
+.projects-titles,
+.projects-categories {
+  margin-right: 5px;
+  margin-left: 5px;
+  display: flex;
+  flex-flow: column;
+  width: 100vw;
+}
+
+.projects-titles {
+  text-align: right;
+}
+
+.projects-categories {
+  text-align: left;
+}
+
+.project-title,
+.project-category {
+  margin-bottom: 10px;
+}
+
+.project-title:hover {
+  background-color: #ffb5da;
+}
+
+.UserExperienceDesign,
+.title-UserExperienceDesign:hover {
+  background-color: #ffb5da;
+}
+
+.VisualDesign,
+.title-VisualDesign:hover {
+  background-color: #ffd6a5;
+}
+
+.DataVisualization,
+.title-DataVisualization:hover {
+  background-color: #a0c4ff;
+}
+
+/* COLORSCHEME: [#ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff] */
+.hidden {
+  display: none;
+}
+
+/* fade in animation */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadein {
+  animation: fadein 2s;
+}
+/* end fade in animation */
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+em {
+  font-style: normal;
+  font-weight: 600;
+}
+h1,
+h2,
+em {
+  letter-spacing: 0.1em;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+#title {
+  font-size: 4em;
+  margin: 0.1em;
+  margin-top: 1em;
+}
+
+#subtitle {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* DRAW NAME */
+@keyframes draw {
+  from {
+    stroke-dashoffset: -1500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+path {
+  stroke-dasharray: 1500;
+  animation: draw 3s ease-out;
+}
+/* END DRAW NAME */
+
+/* NAV */
+#nav {
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+  top: 0.5em;
+  right: 2em;
+}
+.nav-element,
+a.nav-element {
+  padding-right: 10px;
+  font-weight: normal;
+}
+.nav-element:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
+}
+/* END NAV */
+
+/* END HEADER */
+
+/* FOOTER */
+footer {
+  text-align: center;
+}
+.social-button {
+  margin: 0.5em;
+  width: 2.5em;
+  height: 2.5em;
+  transition: fill 0.5s;
+}
+.social-button:hover {
+  fill: #ffb5da;
+}
+#social-footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+#email {
+  background-color: #ffb5da;
+}
+/* END FOOTER */
+
+/* About */
+#about-photo {
+  float: left;
+  margin-left: -10vw;
+  margin-right: 2vw;
+  width: 20em;
+  height: auto;
+  margin-top: -12vh;
+}
+.about-text {
+  text-align: justify;
+}
