@@ -257,13 +257,17 @@ footer {
     font-size: 60px;
   }
   #subtitle {
-    font-size: 20px;
+    font-size: 18px;
   }
   #nav {
     top: 0.25em;
     right: 1em;
   }
 
+  #about-text {
+    display: flex;
+    flex-flow: column;
+  }
   #about-photo {
     margin-bottom: 10px;
   }
