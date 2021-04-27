@@ -909,7 +909,14 @@ export default class Work extends Component {
       project_rows.push(
         <div className="project-row">
           <span className="project-span">
-            <a className={class_title}>{proj.title}</a>
+            <a
+              className={class_title}
+              onClick={() => this.handleClick(proj)}
+              project={proj}
+              comingSoonHandler={this.props.comingSoonHandler}
+            >
+              {proj.title}
+            </a>
           </span>
           <span className="project-span">
             <a className={class_cat}>{proj.category}</a>
