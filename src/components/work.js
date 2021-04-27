@@ -882,31 +882,48 @@ export default class Work extends Component {
   render() {
     const project_titles_render = [];
     const project_categories_render = [];
+    const project_rows = [];
 
     for (let proj of this.projects) {
-      var class_name =
+      // var class_name =
+      //   "project-title " + "title-" + proj.category.split(" ").join("");
+      // project_titles_render.push(
+      //   <a
+      //     className={class_name}
+      //     onClick={() => this.handleClick(proj)}
+      //     project={proj}
+      //     comingSoonHandler={this.props.comingSoonHandler}
+      //   >
+      //     {proj.title}
+      //   </a>
+      // );
+      // var class_name = "project-category " + proj.category.split(" ").join("");
+      // project_categories_render.push(
+      //   <a className={class_name}>{proj.category}</a>
+      // );
+
+      var class_title =
         "project-title " + "title-" + proj.category.split(" ").join("");
-      project_titles_render.push(
-        <a
-          className={class_name}
-          onClick={() => this.handleClick(proj)}
-          project={proj}
-          comingSoonHandler={this.props.comingSoonHandler}
-        >
-          {proj.title}
-        </a>
-      );
-      var class_name = "project-category " + proj.category.split(" ").join("");
-      project_categories_render.push(
-        <a className={class_name}>{proj.category}</a>
+
+      var class_cat = "project-category " + proj.category.split(" ").join("");
+      project_rows.push(
+        <div className="project-row">
+          <span className="project-span">
+            <a className={class_title}>{proj.title}</a>
+          </span>
+          <span className="project-span">
+            <a className={class_cat}>{proj.category}</a>
+          </span>
+        </div>
       );
     }
 
     return (
-      <div id="projects-container">
-        <div className="projects-titles">{project_titles_render}</div>
-        <div className="projects-categories">{project_categories_render}</div>
-      </div>
+      // <div id="projects-container">
+      //   <div className="projects-titles">{project_titles_render}</div>
+      //   <div className="projects-categories">{project_categories_render}</div>
+      // </div>
+      <div id="projects-container">{project_rows}</div>
     );
   }
 }

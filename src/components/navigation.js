@@ -23,7 +23,7 @@ export default class Navigation extends Component {
         <h4
           onClick={this.props.workHandler}
           id="work-button"
-          className="nav-element"
+          className="nav-element active"
         >
           work
         </h4>
