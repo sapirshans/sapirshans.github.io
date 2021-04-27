@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto+Mono:wght@400;700");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto+Mono:wght@400;700");
 
 svg {
   position: absolute;
+  left: 0;
   z-index: -1;
 }
 
@@ -269,7 +270,9 @@ footer {
     flex-flow: column;
   }
   #about-photo {
+    margin: auto;
     margin-bottom: 10px;
+    width: 15em;
   }
 
   .content {

@@ -10,8 +10,10 @@ export default class About extends Component {
             alt="this was supposed to be a picture of me, but enjoy this joke instead: "
             id="about-photo"
           />
-          <span id="hello">{"👋 "}Hey!</span> My name's Sapir and I'm a
-          world-class <em>problem-solver</em>. <br />
+          <p>
+            <span id="hello">{"👋 "}Hey!</span> My name's Sapir and I'm a
+            world-class <em>problem-solver</em>. <br />
+          </p>
           <br />
           <p class="about-text">
             Ever since I can remember myself, one of my greatest passions is to
