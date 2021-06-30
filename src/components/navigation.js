@@ -36,11 +36,10 @@ export default class Navigation extends Component {
         </h4>
         <a
           href="./public/sapirshansresume.pdf"
-          target="_blank"
-          rel="noopener"
           aria-label="Download my resume!"
           className="nav-element"
           id="nav-element"
+          download="sapir_shanskhalil_resume.pdf"
         >
           <h4 className="nav-element" id="resume-button">
             resume
