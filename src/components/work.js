@@ -5,60 +5,27 @@ import ComingSoon from "./comingsoon";
 export default class Work extends Component {
   projects = [
     {
-      title: "Daily UI",
+      title: "Re-Imagining Spotify Music Discovery with Tags",
       description:
-        "Check out my other UI designs from the daily UI challenge on Dribble",
-      date: "",
-      rendering: <ComingSoon></ComingSoon>,
-      category: "User Experience Design",
-    },
-    {
-      title: "Spotify Tags",
-      description:
-        "As part of my Digital Product Design course, I explored ways to improve Spotify and came up with a tagging scheme.",
+        "As part of my Digital Product Design course, I explored ways to improve Spotify. The solution? A tagging scheme.",
       date: "August 2019 - December 2019",
       rendering: (
         <div class="post-wrapper">
-          <h2>Defining the Problem Space</h2>
+          <h2>
+            People want to find new music, but they have a hard time looking for
+            new songs or artists through the immense amount of existing music.
+          </h2>
           <p>
-            After brainstorming many different potential problems I could tackle
-            within Spotify, I decided to focus on <em>music discovery</em>.
-            Spotify's discover section, although improving, is weak. It works,
-            but it could be a lot better. The whole point of the discover
-            section is to make it <em>easier</em> for the user to rummage
-            through the almost infinite number of existing songs there are in
-            the world so they could find the songs that they will like. There
-            are still many overwhelming things on the discover section, and in
-            addition many playlists have either repetitive artists or songs.
+            Spotify's method of music discovery, the discover section, is based
+            on playlists. This limits music discovery to playlist, album, and
+            song titles, and artist names, making it hard to find{" "}
+            <em>completely new content</em>.
           </p>
-          <h3>The People Problem</h3>
-          <p>
-            {" "}
-            After doing the five whys exercise, I came up with my initial people
-            problem.
-            <br />
-            <br />
-            <i>
-              When I look for new music, I want to be able to search for the
-              type of song I want to find, so I can save time looking.
-            </i>
-            <br />
-            <br /> But I can't do that well because:
-            <ul>
-              <li>There is a lot of music out there</li>
-              <li>
-                The current ways to search for music aren’t specific enough for
-                my needs
-              </li>
-            </ul>
-          </p>
+          <h2>Solution: Tagging Scheme for Spotify</h2>
+          {/* insert images here also */}
+          <ReactPlayer url="https://www.youtube.com/watch?v=wAdp4pb8lgY" />
           <h2>Research</h2>
-          <p>
-            To look into this problem, I both conducted user research in person
-            and online through a survey and an interview, as well as market
-            research.
-          </p>
-          <h3>Results</h3>
+          <h3>User Research: Survey and Interview Results</h3>
           <p>
             What I found in my research was that people had{" "}
             <em>mixed feelings</em> about discovering new music, but slightly
@@ -80,7 +47,7 @@ export default class Work extends Component {
             <em>close but not close enough</em> to what they wanted, or that
             they already knew about it, or that they didn’t trust them.
           </p>
-          <h3>Market Research</h3>
+          <h3>Market Research Results</h3>
           <p>
             Some current apps that address the issue of discovering new music
             are Pandora, Shazam, and SoundCloud. <br />
@@ -101,19 +68,7 @@ export default class Work extends Component {
             are looking for smaller artists, since they have the appeal of
             anyone being able to post a song.
           </p>
-          <h3>Redefining the People Problem</h3>
-          <p>
-            <i>
-              People want to find new music, but they have a hard time looking
-              for new songs or artists through the immense amount of existing
-              music.
-            </i>
-          </p>
           <h2>Ideating</h2>
-          <p>
-            Now that I had all this information, it was time to get creative and
-            problem solve!
-          </p>
           <h3>Trends</h3>
           <img
             src={process.env.PUBLIC_URL + "post-content/spotify-trends.png"}
@@ -128,18 +83,14 @@ export default class Work extends Component {
           />
           <h3>Brainstorming</h3>
           <p>
-            In order to come up with many diverse ideas, I brainstormed with two
-            friends. They both have very different tastes in music and both use
-            Spotify to listen to music. After the HMW (How May We)’s some of the
-            restrictions in choosing Opportunity Areas were lack of visual
-            problems and more algorithm based problems (specifically in the
-            recommendations section). At the end of the brainstorming session,
-            we chose these 3 solution spaces because we either thought they were
-            very promising or interesting spaces. We thought the description and
-            identifying what you like about a song spaces would be good to
-            choose since we are dealing with a search problem. The social aspect
-            was to potentially mimic how people ‘discover’ songs out in the real
-            world.
+            I brainstormed with two friends so I could get{" "}
+            <em>many diverse ideas</em>. At the end of the brainstorming
+            session, we chose these 3 solution spaces because we thought they
+            were very promising or interesting spaces. We thought the
+            description and identifying what you like about a song spaces would
+            be good to choose since we are dealing with a search problem. The
+            social aspect was to potentially mimic how people ‘discover’ songs
+            out in the real world.
           </p>
           <img
             src={
@@ -166,20 +117,16 @@ export default class Work extends Component {
             Finally, I decided that <em>song tags</em> would be the best way to
             go. It’s a great answer to the people problem because it finally
             allows users to search for songs NOT based on the artist or song
-            name, but
-            <em>based on content</em>. It allows users to be more specific in
-            what they want by searching multiple tags at a time, as well as let
-            people look for songs that might not necessarily be in a playlist,
-            especially since the Spotify playlists are repetitive. It's better
-            than some of the other features we came up with because it
-            introduces a search-mechanism to Spotify that is{" "}
+            name, but <em> based on content</em>. It allows users to be more
+            specific in what they want by searching multiple tags at a time, as
+            well as let people look for songs that might not necessarily be in a
+            playlist, especially since the Spotify playlists are repetitive.
+            It's better than some of the other features we came up with because
+            it introduces a natural search-mechanism to Spotify that is{" "}
             <em>content-based</em> rather than title-based.
           </p>
+
           <h2>Designing: Building the Feature</h2>
-          <p>
-            I chose the feature, but now I need to flesh it out and think of
-            what it will need and how it can be integrated into Spotify.
-          </p>
           <h3>(Possible) Content Requirements: </h3>
           <ul>
             <li>
@@ -200,7 +147,7 @@ export default class Work extends Component {
             </li>
             <li>
               Tags should be clickable, if you click on a tag you are lead to
-              the ‘tag’ page
+              the ‘tag page‘
             </li>
             <li>Tag page</li>
             <li>
@@ -239,36 +186,7 @@ export default class Work extends Component {
             src={process.env.PUBLIC_URL + "post-content/spotify-medfid3.png"}
             alt="mypic"
           />
-          <h2>Testing and Refining</h2>
-          <p>
-            The flows I chose to prototype were the listening entry point, as
-            well as the placeholder text underneath the search bar in the middle
-            search mechanism point. I wanted to test out a few key things: if
-            the user would be able to understand that the tags in the listening
-            page are links, how clear it was that there would be tags on that
-            page, and which placeholder text and description was better at
-            telling the user that they can search for multiple tags as well as
-            searching for songs and artists. So I came up with the following two
-            tasks for my tested users to do:
-            <ol>
-              <li>I want to look for electronic traditional music in Arabic</li>
-              <li>
-                I want to find songs similar to the one I am currently listening
-                to
-              </li>
-            </ol>
-            In all three of my tests, none of the users searched for multiple
-            tags — one searched for one or the other, and the other two searched
-            for the query in one tag linking the words together. I found that
-            the placeholder text helped people understand that tags required a
-            hashtag symbol in front of the search query, but did not help them
-            realize that they could search for multiple tags. It was not clear
-            that there would be tags on the listening page before seeing it, but
-            after seeing it, all of the users I tested figured out that you
-            could click on the tags (probably because you could click on the
-            artist already).
-          </p>
-          <h3>Iterations</h3>
+          <h3>Iterations After User Testing</h3>
           <img
             src={
               process.env.PUBLIC_URL + "post-content/spotify-iterations1.png"
@@ -364,7 +282,6 @@ export default class Work extends Component {
             This was the most important exploration I did, where I tried to come
             up with ways to show that tags are clickable and interactive.
           </p>
-
           <h2>Visual Design</h2>
           <h3>Setting Goals</h3>
           <p>
@@ -385,23 +302,31 @@ export default class Work extends Component {
             have a way to show what tab the user is on (how it looks like active
             vs inactive).
           </p>
-          <h2>Putting it All Together</h2>
-          <ReactPlayer url="https://www.youtube.com/watch?v=wAdp4pb8lgY" />
-          <h2>Room for Improvement</h2>
+
+          <h2>Reflections and Room For Improvement</h2>
           <p>
             The goal of this project was to experience the entire design process
-            from start to finish. If I had more time on my hands, I would have
-            conducted <em>more user testing</em> in order to really get more
-            accurate results with regards to how to improve the user flow and
-            the visual design. I would have also <em>explored</em> more
-            iterations with respect to user flow and visual design. Especially
-            in regards to the tag page and the content requirements I came up
-            with. Finally, I didn't explore the artist-side user experience with
-            tags, or the question of <em>who tags items</em>. The next steps
-            would be to really delve deep into each content requirement and
-            analyze them individually. Finally, due to time-constraints I also
-            put together a quick prototype, but I would have added more examples
-            and animations to it to make it more seemless.
+            from start to finish. If I had more time on my hands, I would have:{" "}
+          </p>
+          <ul>
+            <li>
+              conducted more user testing in order to really get more accurate
+              results with regards to how to improve the user flow and the
+              visual design
+            </li>
+            <li>
+              explored more iterations with respect to user flow and visual
+              design
+            </li>
+            <li>answering the question of who tags items</li>
+            <li>tried to be wrong</li>
+          </ul>
+          <p>
+            The next steps would be to really delve deep into each content
+            requirement and analyze them individually. Finally, due to
+            time-constraints I also put together a quick prototype, but I would
+            have added more examples and animations to it to make it more
+            seemless.
           </p>
         </div>
       ),
@@ -810,23 +735,33 @@ export default class Work extends Component {
       title: "LingUp",
       description: "How do we get more people to learn a new language?",
       date: "",
-      rendering: <ComingSoon></ComingSoon>,
+      rendering: (
+        <div>
+          <h2>
+            Page coming soon! For now, check out my article on{" "}
+            <a href="https://medium.com/@sapirshans/lingup-language-add-on-concept-8cfacac308a3">
+              Medium
+            </a>
+            !
+          </h2>
+        </div>
+      ),
       category: "User Experience Design",
     },
-    {
-      title: "HopIt",
-      description: "",
-      date: "",
-      rendering: <ComingSoon></ComingSoon>,
-      category: "Visual Design",
-    },
-    {
-      title: "Artist&Title",
-      description: "",
-      date: "",
-      rendering: <ComingSoon></ComingSoon>,
-      category: "Visual Design",
-    },
+    // {
+    //   title: "HopIt",
+    //   description: "",
+    //   date: "",
+    //   rendering: <ComingSoon></ComingSoon>,
+    //   category: "Visual Design",
+    // },
+    // {
+    //   title: "Artist&Title",
+    //   description: "",
+    //   date: "",
+    //   rendering: <ComingSoon></ComingSoon>,
+    //   category: "Visual Design",
+    // },
     {
       title: "Addictiveness Project",
       description:
