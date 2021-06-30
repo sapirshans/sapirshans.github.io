@@ -35,11 +35,11 @@ export default class Navigation extends Component {
           about
         </h4>
         <a
-          href="./public/sapirshansresume.pdf"
+          href="../public/sapirshansresume.pdf"
           aria-label="Download my resume!"
           className="nav-element"
           id="nav-element"
-          download="sapir_shanskhalil_resume.pdf"
+          download
         >
           <h4 className="nav-element" id="resume-button">
             resume
